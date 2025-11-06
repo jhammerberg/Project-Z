@@ -2,7 +2,7 @@
 My personal Zephyr mono-repo to mess with it
 
 ## Repo Setup
-A number of directories have been left out of the repo because they're either nested repositories or venvs, so you'll need to do a number of things to setup this repository. First you should refernece the [Zephyr getting started page](https://docs.zephyrproject.org/latest/develop/getting_started/index.html#getting-started-guide) to get the basic dependencies installed with Winget and set your 7Z path in Windows but stop once you get to the virtual environment and follow these instructions.
+A number of directories have been left out of the repo because they're either nested repositories or venvs, so you'll need to do a number of things to setup this repository. First you should refernece the [Zephyr getting started page](https://docs.zephyrproject.org/latest/develop/getting_started/index.html#getting-started-guide) to get the basic dependencies installed with Winget and set your 7z path in Windows but stop once you get to the virtual environment and follow these instructions.
 1. Download and install `uv` from [here](https://docs.astral.sh/uv/getting-started/installation/) and `just` from [here](https://github.com/casey/just?tab=readme-ov-file#packages).
 2. Clone this repository if you haven't already and enter it:
 ```bash
@@ -42,7 +42,7 @@ If you are in the root workspace directory:
 ```bash
 west build -p -d projects/<project>/build -b <board> projects/<project>
 ```
-2. Flasg the built project:
+2. Flash the built project:
 ```bash
 west flash -d projects/<project>/build
 ```
