@@ -3,7 +3,7 @@ My personal Zephyr mono-repo to mess with it
 
 ## Repo Setup
 A number of directories have been left out of the repo because they're either nested repositories or venvs, so you'll need to do a number of things to setup this repository. First you should refernece the [Zephyr getting started page](https://docs.zephyrproject.org/latest/develop/getting_started/index.html#getting-started-guide) to get the basic dependencies installed with Winget and set your 7Z path in Windows but stop once you get to the virtual environment and follow these instructions.
-1. Download and install `uv` from [here](https://docs.astral.sh/uv/getting-started/installation/).
+1. Download and install `uv` from [here](https://docs.astral.sh/uv/getting-started/installation/) and `just` from [here](https://github.com/casey/just?tab=readme-ov-file#packages).
 2. Clone this repository if you haven't already and enter it:
 ```bash
 cd project-z
@@ -27,7 +27,17 @@ west sdk install
 Note: all of this will probably take a very long time.
 
 ## Building and Flashing
-To build a project you must be in the root project directory:
+Projects should have a `justfile` which should allow you to build and flash easily from inside of a project directory:
+1. For building:
+```bash
+just build
+```
+2. For flashing:
+```bash
+just flash
+```
+
+If you are in the root workspace directory:
 1. Build the selected project:
 ```bash
 west build -p -d projects/<project>/build -b <board> projects/<project>
