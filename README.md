@@ -13,7 +13,9 @@ cd project-z
 uv venv .venv
 .\.venv\Scripts\activate.ps1
 ```
-Note: venv activation is different for each OS
+> [!IMPORTANT]
+> `venv` activation is different for each OS, for most unix systems this command is:
+> ```bash source .venv/bin/activate ```
 4. Install and setup `west`:
 ```bash
 uv pip install --upgrade pip
@@ -24,7 +26,8 @@ uv pip install -r zephyr\scripts\requirements.txt
 ```bash
 west sdk install
 ```
-Note: all of this will probably take a very long time.
+> [!NOTE]
+> The Zephyr repository and SDK is multiple gigabytes in size, so all of this setup will take a very long time.
 
 ## Building and Flashing
 Projects should have a `justfile` which should allow you to build and flash easily from inside of a project directory:
