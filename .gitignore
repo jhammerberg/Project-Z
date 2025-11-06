@@ -1,0 +1,10 @@
+zephyr/
+.west/
+zephyr-sdk-*/
+
+.venv/
+
+build/
+projects/*/build/
+
+.vscode/.*
