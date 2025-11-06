@@ -2,6 +2,7 @@ zephyr/
 .west/
 bootloader/
 tools/
+modules/
 zephyr-sdk-*/
 
 .venv/
