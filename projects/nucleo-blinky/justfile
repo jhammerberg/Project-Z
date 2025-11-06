@@ -13,3 +13,7 @@ build:
 
 flash:
     {{WEST}} flash -d {{BUILD_DIR}}
+
+# Run arbitrary west commands
+west ARGS:
+    {{WEST}} {{ARGS}}
