@@ -1,13 +1,10 @@
-zephyr/
-.west/
-bootloader/
-tools/
-modules/
-zephyr-sdk-*/
+/zephyr/
+/modules/
+/tools/
+/bootloader/
 
-.venv/
-
-build/
-projects/*/build/
-
-.vscode/.*
+/build/*
+*.exe
+*.elf
+*.bin
+*.hex

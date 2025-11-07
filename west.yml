@@ -1,0 +1,15 @@
+manifest:
+  remotes:
+    - name: zephyrproject
+      url-base: https://github.com/zephyrproject-rtos
+
+  projects:
+    # Include the main "zephyr" application
+    - name: zephyr
+      remote: zephyrproject
+      revision: main  # Or a specific tag, like v4.3.0-rc2
+      import: true
+
+  self:
+    # Include all directories as applications
+    path: .
